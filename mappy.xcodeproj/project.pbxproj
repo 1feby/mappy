@@ -14,6 +14,7 @@
 		3923302C22414A5A00957DB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3923302A22414A5A00957DB9 /* LaunchScreen.storyboard */; };
 		3923303722414A5B00957DB9 /* mappyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3923303622414A5B00957DB9 /* mappyTests.swift */; };
 		3923304222414A5B00957DB9 /* mappyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3923304122414A5B00957DB9 /* mappyUITests.swift */; };
+		392330512241577F00957DB9 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 392330502241577F00957DB9 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		3923303D22414A5B00957DB9 /* mappyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mappyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3923304122414A5B00957DB9 /* mappyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mappyUITests.swift; sourceTree = "<group>"; };
 		3923304322414A5B00957DB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		392330502241577F00957DB9 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				392330512241577F00957DB9 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +84,7 @@
 				3923303522414A5B00957DB9 /* mappyTests */,
 				3923304022414A5B00957DB9 /* mappyUITests */,
 				3923301F22414A5500957DB9 /* Products */,
+				3923304F2241577F00957DB9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,6 +127,14 @@
 				3923304322414A5B00957DB9 /* Info.plist */,
 			);
 			path = mappyUITests;
+			sourceTree = "<group>";
+		};
+		3923304F2241577F00957DB9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				392330502241577F00957DB9 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +205,14 @@
 				TargetAttributes = {
 					3923301D22414A5500957DB9 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					3923303122414A5B00957DB9 = {
 						CreatedOnToolsVersion = 10.1;
